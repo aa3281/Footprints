@@ -2,20 +2,24 @@
   .wrap {
   position: relative;
   top: 50px;
-}
-.left, .right {
   display: flex;
+  flex-direction: column
+
+
+}
+/*
+.left, .right {
   width: 1000px;
   justify-content: space-between;
-}
-.right {
+  display: flex;
 
+} */
+.right {
   position: relative;
-  top: 50px;
 	left: 50px;
 }
 
-.left img, .right img {
+.left, .right {
   width: 50px;
   height: 50px;
   opacity: 0;
@@ -23,7 +27,9 @@
   animation-duration: 9s, 9s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
+
 }
+
 @keyframes fadeIn {
   10% {opacity: 1};
   100% {opacity: 1};
@@ -33,95 +39,139 @@
   100% {opacity: 0};
 }
 
-.left img:first-child {
+.wrap img:first-child {
   animation-delay: 0.5s, 3.5s;
 }
-.right img:first-child {
+.wrap img:nth-child(2) {
   animation-delay: 1s, 4s;
 }
-.left img:nth-child(2) {
+.wrap img:nth-child(3) {
   animation-delay: 1.5s, 4.5s;
 }
-.right img:nth-child(2) {
+.wrap img:nth-child(4) {
   animation-delay: 2s, 5s;
 }
-.left img:nth-child(3) {
+.wrap img:nth-child(5) {
   animation-delay: 2.5s, 5.5s;
 }
-.right img:nth-child(3) {
+.wrap img:nth-child(6) {
   animation-delay: 3s, 6s;
 }
-.left img:nth-child(4) {
+.wrap img:nth-child(7) {
   animation-delay: 3.5s, 6.5s;
 }
-.right img:nth-child(4) {
+.wrap img:nth-child(8) {
   animation-delay: 4s, 7s;
 }
-.left img:nth-child(5) {
+.wrap img:nth-child(9) {
   animation-delay: 4.5s, 7.5s;
 }
-.right img:nth-child(5) {
+.wrap img:nth-child(10) {
   animation-delay: 5s, 8s;
 }
-.left img:nth-child(6) {
+.wrap img:nth-child(11) {
   animation-delay: 5.5s, 8.5s;
 }
-.right img:nth-child(6) {
+.wrap img:nth-child(12) {
   animation-delay: 6s, 9s;
 }
-.left img:nth-child(7) {
+.wrap img:nth-child(13) {
   animation-delay: 6.5s, 9.5s;
 }
-.right img:nth-child(7) {
+.wrap img:nth-child(14) {
   animation-delay: 7s, 10s;
 }
-.left img:nth-child(8) {
+.wrap img:nth-child(15) {
   animation-delay: 7.5s, 10.5s;
 }
-.right img:nth-child(8) {
+.wrap img:nth-child(16) {
   animation-delay: 8s, 11s;
 }
-
+.wrap img:nth-child(17) {
+  animation-delay: 8.5s, 11.5s;
+}
+.wrap img:nth-child(18) {
+  animation-delay: 9s, 12s;
+}
+.wrap img:nth-child(19) {
+  animation-delay: 9.5s, 12.5s;
+}
+.wrap img:nth-child(20) {
+  animation-delay: 10s, 13s;
+}
+.wrap img:nth-child(21) {
+  animation-delay: 10.5s, 13.5s;
+}
 
 </style>
 
 <div class="wrap">
-  <!-- One set of footprints -->
-  <div class="pairOfFeet">
-    <!-- Left foot -->
-  	<div class="left">
-  	  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
-  		<img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
-  	</div>
-    <!-- Right foot -->
-  	<div class="right">
-  	  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
-  		<img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
-  	</div>
-  </div>	
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
+  <!-- Left foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" class="left"/>
+  <!-- Right foot -->
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" class="right"/>
 </div>
-
 
 <!-- <div class="wrap">
 <div class="left">
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Left-2.png" />
 </div>
 
 <div class="right">
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right.png" />
-  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
+  <img src="http://host-a-murder.local/wp-content/uploads/2022/12/Purple-Right-2.png" />
 </div>
 </div> -->
