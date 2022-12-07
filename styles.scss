@@ -1,0 +1,8 @@
+/* SCSS for programatically adding animation delay styles */
+/* Adding this as a separate file as our use case requires straight CSS copied into the page */
+/* There are 56 footprints. Adjust as necessary */
+@for $i from 1 through 56 {
+    .wrap img:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.5}s, #{$i * .5 +3}s;
+    }
+}
